@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Beau+Rivage&family=Bevan&family=Gruppo&family=Kanit&family=League+Gothic&family=Raleway:ital,wght@1,100&family=Road+Rage&family=Send+Flowers&family=Square+Peg&display=swap");
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+.todolist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6e6e6;
+  padding: 3rem 3rem;
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px #989696;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+}
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.8rem;
+  border: solid 1px #e6e6e6;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+.todoItemTitle {
+  inline-size: 10rem;
+  overflow-wrap: break-word;
+}
+.buttons {
+  display: flex;
+  margin-left: 1rem;
+}
+.buttons div {
+  margin-left: 0.6rem;
+  cursor: pointer;
+}
+
+.inputField {
+  margin-top: 1rem;
+  inline-size: 15rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #e6e6e6;
+  border-bottom: solid 1px #f2f2f2;
+}
+
+.inputField::placeholder {
+  opacity: 0.7;
+  color: #b3b3b3;
+  padding-left: 0.5rem;
+}
+.inputField:focus {
+  outline: none;
+}
+.addBtn {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border-color: #f2f2f2;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.addBtn:hover {
+  border-color: black;
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.footer button {
+  border-radius: 5px;
+  border-color: #f2f2f2;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  padding: 0.5rem 0.5rem;
+}
+.footer button:hover {
+  border-color: black;
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+
+#modal {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal:empty {
+  display: none;
+}
+
+#modal > div {
+  width: 250px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  background: #e6e6e6;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.modal-buttons button {
+  border-radius: 5px;
+  border-color: #f2f2f2;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 0.4rem 1.4rem;
+}
+
+.modal-buttons button:hover {
+  border-color: black;
+  background-color: #f2f2f2;
+  color: black;
+}
